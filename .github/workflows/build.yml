@@ -16,6 +16,9 @@ jobs:
 
       - name: Setup yarn
         run: npm install yarn
+
+      - name: Install dependencies
+        run: yarn install
           
       - name: execute build
         run: yarn build
