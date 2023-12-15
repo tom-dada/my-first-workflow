@@ -1,0 +1,11 @@
+name: Print from file
+on: push
+
+jobs: 
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - name: print hello-world on terminal
+        run: echo "$(hello_world.txt)"
